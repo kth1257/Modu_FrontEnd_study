@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼</title>
+</head>
+<body>
+    <form action="">
+      <label for="id"><h3>아이디</h3></label>
+      <input id="id" type="text">
+
+      <label for="pw"><h3>비밀번호</h3></label>
+      <input id="pw" type="password" placeholder="특수문자 포함 필수">
+
+      <label for="birth"><h3>생일</h3></label>
+      <input id="birth" type="date">
+
+      <h3>프로필사진</h3>
+      <input type="file">
+      <br>
+      <select name="" id="">
+        <option value="">SKT</option>
+        <option value="1">KT</option>
+        <option value="2">LG+</option>
+      </select>
+
+      <h3>연락처</h3>
+      <input type="tel">
+
+      <fieldset>
+        <legend><h3>성별</h3></legend>
+        <input type="radio" name="gender" id="man">
+        <label for="man">남성</label>
+        <input type="radio" name="gender" id="girl">
+        <label for="girl">여성</label>
+      </fieldset>
+      <fieldset>
+        <legend><h3>사용기술</h3></legend>
+        <input type="checkbox" name="skill" id="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="skill" id="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" name="skill" id="js">
+        <label for="js">JavaScript</label>
+
+        <input type="checkbox" name="skill" id="py">
+        <label for="py">Python</label>
+
+        <input type="checkbox" name="skill" id="django">
+        <label for="django">Django</label>
+      </fieldset>
+      <h3>사용하는 브라우저를 선택하세요</h3>
+      <input list="br" placeholder="브라우저 이름 입력">
+      <datalist id="br">
+        <option value="크롬"></option>
+        <option value="사파리"></option>
+        <option value="오페라"></option>
+        <option value="인터넷 익스플로러"></option>
+      </datalist>
+      <br>
+      <input type="reset">
+      <input type="submit">
+    </form>
+</body>
+</html>
