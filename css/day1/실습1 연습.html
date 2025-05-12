@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 선택자 실습</title>
+    <style>
+      .card {
+        display: inline-block;
+        border-radius: 20px;
+        background-color: gray;
+        padding: 30px;
+        margin: 10px;
+        box-shadow: gainsboro 7px 7px 7px;
+        font-size: 20px;
+      }
+      .card:nth-child(1) {
+        background-color: lightcoral;
+      }
+      .card:nth-child(2) {
+        background-color: lightsalmon;
+      }
+      .card:nth-child(3) {
+        background-color: khaki;
+      }
+      .card:nth-child(4) {
+        background-color: lightgreen;
+      }
+      .card:nth-child(5) {
+        background-color: lightskyblue;
+      }
+      .card:nth-child(6) {
+        background-color: lightsteelblue;
+      }
+
+      .card:first-child {
+        border: 3px dashed #000;
+      }
+      .card:last-child {
+        border: 3px dashed #000;
+      }
+      .card:nth-child(even) {
+        color: white;
+      }
+
+      ul li:first-child::before {
+        content: "🌟";
+      }
+      ul li:not(first-child)::before {
+        content: "✅";
+      }
+
+      ul li:last-child::after {
+        content: " 팀장";
+        font-size: small;
+        color: red;
+        font-weight: bold;
+      }
+      ul li:not(last-child)::after {
+        content: " 팀원";
+        font-size: small;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>프로젝트 팀 카드</h1>
+
+    <section>
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">TypeScript</div>
+      <div class="card">Next.js</div>
+    </section>
+
+    <h2>팀원 목록</h2>
+    <ul class="team-list">
+      <li>로지</li>
+      <li>지지</li>
+      <li>하티</li>
+      <li>라이캣</li>
+      <li>웨이드</li>
+      <li>써니</li>
+    </ul>
+  </body>
+</html>

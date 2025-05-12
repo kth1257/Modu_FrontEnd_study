@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          @keyframes turn {
+              0% {
+                transform: rotateX(0deg);
+              }
+              100% {
+                transform: rotateX(360deg);
+              }
+          }
+
+          * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+
+          div {
+            width: 1000px;
+            height: 100vh;
+            perspective: 800px;
+            margin: 100px 300px;
+          }
+          .list-item {
+            width: 600%;
+            transform-style: preserve-3d;
+            /* transform: rotateY(350deg); */
+            /* animation: turn 10s */
+          }
+          .list-item li {
+            display: inline-block;
+            width: 350px;
+            height: 350px;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid #000;
+            margin-right: 10px;
+
+          }
+          .list-item li img {
+            width: 330px;
+            height: 90%;
+            padding: 20px 10px;
+          }
+          .list-item li:nth-child(1) {
+
+          }
+          .list-item li:nth-child(2) {
+            transform: rotateY(40deg);
+          }
+          .list-item li:nth-child(3) {
+            transform: rotateY(65deg);
+          }
+          .list-item li:nth-child(4) {
+            transform: rotateY(95deg);
+            
+          }
+          .list-item li:nth-child(5) {
+            transform: rotateY(180deg);
+            
+          }
+          .list-item li:nth-child(6) {
+            transform: rotateY(195deg);
+            
+          }
+          .list-item li:nth-child(7) {
+            transform: rotateY(220deg);
+            
+          }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul class="list-item">
+                <li><img src="./image/ev.png" alt="" /></li>
+                <li><img src="./image/jammanbo.png" alt="" /></li>
+                <li><img src="./image/mazayoung.png" alt="" /></li>
+                <li><img src="./image/mobugi.png" alt="" /></li>
+                <li><img src="./image/nyaong.png" alt="" /></li>
+                <li><img src="./image/pulin.png" alt="" /></li>
+                <li><img src="./image/weirdseed.png" alt="" /></li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            @keyframes watch {
+              0% {
+                transform: rotate(0deg);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+            .container {
+              background-color: burlywood;
+              width: 500px;
+              height: 500px;
+              border-radius: 50%;
+              position: relative;
+              border: 10px solid brown;
+            }
+            .hour {
+              width: 13px;
+              height: 150px;
+              background-color: black;
+              position: absolute;
+              border-radius: 50px;
+
+              left: 50%;
+              top: 50%;
+              transform-origin: top center;
+              animation: watch 100s linear infinite;
+            }
+            .min {
+              width: 10px;
+              height: 190px;
+              background-color: black;
+              position: absolute;
+              border-radius: 50px;
+              left: 50%;
+              top: 50%;
+              transform-origin: top center;
+              animation: watch 40s linear infinite;
+            }
+            .sec {
+              width: 5px;
+              height: 230px;
+              background-color: red;
+              position: absolute;
+              border-radius: 50px;
+              left: 50%;
+              top: 50%;
+              transform-origin: top center;
+              animation: watch 2s linear infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sec"></div>
+            <div class="min"></div>
+            <div class="hour"></div>
+        </div>
+    </body>
+</html>

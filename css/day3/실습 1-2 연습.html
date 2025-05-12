@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1번패딩탑 방법사용, 2번 어스펙트 레이시오 방법 사용</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .div1 {
+        width: 100%;
+        aspect-ratio: 3 / 1;
+        position: relative;
+      }
+      .img-a {
+        position: absolute;
+        top: 0;
+        width: 33%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .img1 {
+        left: 0;
+      }
+      .img2 {
+        left: 33%;
+      }
+      .img3 {
+        left: 66%;
+      }
+
+      .div2 {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 6 / 1;
+      }
+      .img-b {
+        position: absolute;
+        top: 0;
+        width: 33%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body>
+    <div class="div1">
+      <img class="img-a img1" src="./weniv-binky.png" alt="">
+      <img class="img-a img2" src="./weniv-chilli.png" alt="">
+      <img class="img-a img3" src="./weniv-garry.png" alt="">
+    </div>
+    <div class="div1">
+      <img class="img-a img1" src="./weniv-licat.png" alt="">
+      <img class="img-a img2" src="./weniv-suri.png" alt="">
+      <img class="img-a img3" src="./weniv-wade.png" alt="">
+    </div>
+    <div class="div2">
+      <img class="img-b img1" src="./weniv-binky.png" alt="">
+      <img class="img-b img2" src="./weniv-chilli.png" alt="">
+      <img class="img-b img3" src="./weniv-garry.png" alt="">
+    </div>
+    <div class="div2">
+      <img class="img-b img1" src="./weniv-licat.png" alt="">
+      <img class="img-b img2" src="./weniv-suri.png" alt="">
+      <img class="img-b img3" src="./weniv-wade.png" alt="">
+    </div>
+</body>
+</html>

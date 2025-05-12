@@ -1,0 +1,127 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.container {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.art1, .art2 {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.art1 img,
+.art2 section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.art1 main,
+.art2 main {
+  padding: 16px;
+  height: auto;
+}
+
+.art1 main h2 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #29363D;
+}
+
+.art1 main p,
+.art2 main p {
+  font-size: 12.5px;
+  color: #5A6A72;
+  height: 40px;
+}
+
+.art1 footer,
+.art2 footer {
+  padding: 16px;
+}
+
+.art1 footer a {
+  font-weight: bold;
+  color: #29363D;
+  text-decoration: underline;
+}
+
+/* art2 세부 설정 */
+.art2 header {
+  overflow: hidden;
+  padding: 16px;
+  color: #29363D;
+
+}
+
+.art2 header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  object-fit: cover;
+}
+
+.art2 header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 0px 52px; /* 왼쪽 여백 이미지 크기보다 크게 줌 */
+}
+
+.art2 header p {
+  font-size: 12px;
+  color: #5A6A72;
+  margin: 0 0 0 52px;
+}
+
+.art2 section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.art2 footer {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 8px 16px 16px;
+}
+
+.link a img {
+  width: 10px;
+  height: 10px;
+  margin-left: 20px;
+}
+
+.art2 footer a:first-child {
+  float: left;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #29363D;
+}
+
+.art2 footer button {
+  background: none;
+  border: none;
+}
+
+
+.art2 footer button img {
+  width: 30px;
+  height: 30px;
+}
